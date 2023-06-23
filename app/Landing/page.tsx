@@ -6,11 +6,13 @@ import Link from "next/link";
 const Landing = () => {
   return (
     <StyledLanding>
-      <div className="first-section">
+      <div className="cover">
         <Image src={security} alt="logo"/>
-        <h1>Web3-2FA</h1>
-        <p className="subtitle">A blockchain-based two-factor authentication</p>
-        <button><Link href="./../Demo">Get Started</Link></button>
+        <div className="get-started">
+          <h1>Web3-2FA</h1>
+          <p className="subtitle">A blockchain-based two-factor authentication</p>
+          <button><Link href="./../Demo">Get Started</Link></button>
+        </div>
         <p className="description">Web3-2FA is a JavaScript library that provides a web3 alternative to conventional 2FA methods using <span><Link href="https://hedera.com/" target="_blank">The Hedera network</Link></span> and React components and hooks.</p>
       </div>
       <div className="section">

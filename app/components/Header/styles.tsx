@@ -22,7 +22,7 @@ export const StyledHeader = styled.div`
       }
     }
   }
-
+  
   .menu {
     position: absolute;
     right: 16px;
