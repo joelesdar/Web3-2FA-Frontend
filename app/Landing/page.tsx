@@ -17,7 +17,7 @@ const Landing = () => {
       </div>
       <div className="section">
         <h2 className="section-title">How does it work??</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
       <div className="section">
         <h2 className="section-title">Example</h2>
@@ -27,9 +27,9 @@ const Landing = () => {
         <h2 className="section-title">Get started</h2>
         <ol type="1" className="steps">
           <li>1. npm install web3-2fa</li>
-          <li>2. Import &#123; W2FaProvider  &#125; from 'web3-2fa' in the _app file.</li>
+          <li>2. Import &#123; W2FaProvider  &#125; from &apos;web3-2fa&apos; in the _app file.</li>
           <li>3. Wrap the W2FaProvider on the App component.</li>
-          <li>4. Import &#123; useW2Fa, W2FaButton, ...  &#125; from 'web3-2fa'</li>
+          <li>4. Import &#123; useW2Fa, W2FaButton, ...  &#125; from &apos;web3-2fa&apos;</li>
           <li>5. ¡Start building!</li>
         </ol>
         <p className="docs">You can find the documentation in the <span><Link href="https://github.com/joelesdar/Web3-2FA-Frontend" target="_blank">Github repository</Link></span> in the readme.md file</p>

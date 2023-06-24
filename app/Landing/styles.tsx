@@ -148,19 +148,19 @@ export const StyledLanding = styled.div`
     padding: 104px 64px 176px;
 
     h1 {
-      font-size: 120px;
+      font-size: 80px;
     }
 
-    p, .description, li{
+    /* p, .description, li{
       font-size: 40px;
       line-height: 80px;
-    }
+    } */
 
-    button {
+    /* button {
       font-size: 40px;
       padding: 26px 44px;
       border-radius: 16px;
-    }
+    } */
 
     iframe {
       width: 1090px;
@@ -177,31 +177,33 @@ export const StyledLanding = styled.div`
         height: fit-content;
       }
       .subtitle {
-        font-size: 44px;
+        font-size: 40px;
         line-height: 72px;
       }
       .get-started {
         width: 55%;
       }
       .description {
-        margin-top: 104px;
+        /* margin-top: 104px; */
+        font-size: 28px;
+        line-height: 64px;
       }
     }
 
     .section {
-      width: 1440px;
+      max-width: 1440px;
       margin: 0 auto;
       padding-top: 152px;
 
     }
     
     .section-title {
-      font-size: 52px;
+      font-size: 44px;
     }
 
-    .docs {
+    /* .docs {
       font-size: 36px;
       line-height: 72px;
-    }
+    } */
   } 
 `;
