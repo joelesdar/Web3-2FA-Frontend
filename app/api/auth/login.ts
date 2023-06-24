@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import speakeasy from "speakeasy"
+import {sendCodeToWallet } from '../../utils/sendCodeToWallet'
 
 export default function loginHandler(req: NextApiRequest, res: NextApiResponse) {
   if(req.method==='POST'){
@@ -16,6 +17,9 @@ export default function loginHandler(req: NextApiRequest, res: NextApiResponse) 
     })
 
     if (isValid){
+
+      sendCodeToWallet(email, otpCode);
+      
       res.status(200).json({message: 'Authentication succesful'})
     }else {
       res.status(401).json({message: 'Invalid authentication code'})
