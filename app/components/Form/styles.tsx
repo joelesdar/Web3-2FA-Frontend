@@ -4,30 +4,37 @@ export const StyledForm = styled.div`
   border-radius: 16px;
   background: white;
   padding: 32px;
-  width: fit-content;
   margin: 16px auto;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
 
-  h1 {
+  .form-title {
+    font-weight: 700;
+    font-size: 32px;
     color: #0E8388;
-    margin-bottom: 40px;
     text-align: center;
     font-weight: 700;
+    line-height: 40px;
+  }
+  .form-container {
+    margin-top: 32px;
   }
 
   .subtitle {
     color: #2C3333;
     text-align: center;
-;
+    margin-top: 24px;
   }
 
   p, input {
     color: #2C3333;
     margin-bottom: 8px;
-    max-width: 300px;
+    width: 100%;
   }
 
   .sign-up-button {
-    margin-top: 32px;
+    margin-top: 16px;
   }
   
   input {
@@ -37,6 +44,7 @@ export const StyledForm = styled.div`
     margin-bottom: 16px;
     padding: 10px;
   }
+
 
   .register-input {
     border-radius: 0;
@@ -52,6 +60,16 @@ export const StyledForm = styled.div`
     padding: 10px 0;
     border-radius: 50px;
     border: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .sign-up-button {
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      font-weight: 600;
+    }
   }
 
   .cancel-button {
@@ -61,10 +79,24 @@ export const StyledForm = styled.div`
     border-radius: 50px;
     border: 1px solid #0E8388;
     margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .back-button {
+    width: 260px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 48px;
   }
 
   .wallet-text {
     margin-bottom: 48px;
+  }
+
+  .successfull-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   
   a {
@@ -72,5 +104,27 @@ export const StyledForm = styled.div`
     margin: 0 auto;
     color: #0E8388;
   }
+
+  @media screen and (min-width: 744px) {
+    border-radius: 24px;
+    width: 680px;
+    max-width: 680px;
+
+    .form-container {
+      /* width: 90%; */
+      margin: 0 auto;
+
+    }
+  }
+
+  /* @media screen and (min-width: 1440px) {
+    border-radius: 24px;
+    width: 1312px;
+
+    .form-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  } */
 
 `;
