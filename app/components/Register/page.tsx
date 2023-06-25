@@ -25,8 +25,8 @@ const Register = ({ handleRegistered}) => {
 
       //registro exitoso
       console.log(response.data.message)
-    } catch (error){
-      setErrorMessage(error.respons.data.message)
+    } catch (error) {
+      setErrorMessage(error.response.data.message)
     }
   }
 
