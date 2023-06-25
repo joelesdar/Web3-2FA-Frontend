@@ -7,12 +7,10 @@ const Token = () => {
       <input 
         className="register-input" 
         type="text" 
-        placeholder="ej. 0x123456789..." 
-        value={walletAddress}
-        onChange={(e)=> setWalletAddress(e.target.value)}
+        placeholder="ej. 0x123456789..."
       />
-      <Link className="submit-button" href="#" onClick={(e) => {handleRegistered(e); handleRegistration(e);}}>Back to Login</Link>
-      <Link className="cancel-button" href="#" onClick={(e) => {handleRegistered(e); handleRegistration(e);}}>Back to Login</Link>
+      <Link className="submit-button" href="#">Cancel</Link>
+      <Link className="cancel-button" href="#">Confirm</Link>
     </div>
   );
 }

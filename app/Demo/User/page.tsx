@@ -2,11 +2,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import { StyledDemo } from "../styles"
-import { StyledForm } from "@/app/components/Form/styles"
 import { StyledUser } from "./styles"
 import userImage from "./../../../public/profile.png"
 
-const User = ({ handleRegistered }) => {
+const User = () => {
 
   return (
     <StyledDemo>

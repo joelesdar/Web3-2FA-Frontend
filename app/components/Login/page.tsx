@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios'
 
 
-const Login = ({ handleRegistered }) => {
+const Login = ({ handleRegistered }: { handleRegistered: React.MouseEventHandler<HTMLAnchorElement> }) => {
   const[email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [otpCode, setOtpCode] = useState('')
@@ -12,7 +12,7 @@ const Login = ({ handleRegistered }) => {
  
   
 
-  const handleLogin = async (e) => {
+  const handleLogin = async (e:any) => {
     e.preventDefault()
     try {
       const response = await axios.post('/api/auth/login', {
@@ -22,7 +22,7 @@ const Login = ({ handleRegistered }) => {
       })
       //autenticacion exitosa
       console.log(response.data.message)
-    }catch(error){
+    }catch(error:any){
       //error durante la autenticacion
       setErrorMessage(error.response.data.message)
     }
@@ -53,7 +53,7 @@ const Login = ({ handleRegistered }) => {
       onChange={(e) => setOtpCode(e.target.value)}
       />
       <input className="submit-button" type="submit" value="Login"/>
-      <p className="sign-up-button">Don't have an account? <Link href="#" onClick={(handleRegistered)}>Sign up</Link></p>
+      <p className="sign-up-button">Don&apos;t have an account? <Link href="#" onClick={(handleRegistered)}>Sign up</Link></p>
       <Link href="./../../Demo/User">Usuario</Link>
     </form>
   );

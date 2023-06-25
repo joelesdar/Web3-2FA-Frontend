@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const RegistrationSuccess = ({ handleRegistered, handleRegistration }) => {
+const RegistrationSuccess = ({ handleRegistered }: { handleRegistered: React.MouseEventHandler<HTMLAnchorElement> }, { handleRegistration }: { handleRegistration: React.MouseEventHandler<HTMLAnchorElement> }) => {
   return (
     <div className="successfull-container">
       <h2 className="form-title">Successfull registration!</h2>

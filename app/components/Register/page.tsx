@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import axios from 'axios'
 
-const Register = ({ handleRegistered}) => {
+const Register = ({ handleRegistered }: { handleRegistered: React.MouseEventHandler<HTMLInputElement> }) => {
 
   const[fullName, setFullName] = useState('')
   const[email, setEmail] = useState('')
@@ -11,7 +11,7 @@ const Register = ({ handleRegistered}) => {
   const [walletAddress, setWalletAddress] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
 
-  const handleRegistration =async (e) => {
+  const handleRegistration = async (e:any) => {
     e.preventDefault()
 
     try{
@@ -26,9 +26,13 @@ const Register = ({ handleRegistered}) => {
       //registro exitoso
       console.log(response.data.message)
     } catch (error) {
-      setErrorMessage(error.response.data.message)
+      if (axios.isAxiosError(error)) {
+        setErrorMessage(error.message);
+      } else {
+        setErrorMessage('An unknown error occurred');
+      }
     }
-  }
+}
 
 
   return (
