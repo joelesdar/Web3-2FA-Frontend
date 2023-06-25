@@ -54,6 +54,7 @@ const Login = ({ handleRegistered }) => {
       />
       <input className="submit-button" type="submit" value="Login"/>
       <p className="sign-up-button">Don't have an account? <Link href="#" onClick={(handleRegistered)}>Sign up</Link></p>
+      <Link href="./../../Demo/User">Usuario</Link>
     </form>
   );
 }
