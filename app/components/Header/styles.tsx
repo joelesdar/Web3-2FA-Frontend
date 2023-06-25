@@ -22,7 +22,7 @@ export const StyledHeader = styled.div`
       }
     }
   }
-
+  
   .menu {
     position: absolute;
     right: 16px;
@@ -71,7 +71,7 @@ export const StyledHeader = styled.div`
     font-size: 32px;
 
     .navbar {
-      font-size: 24px;
+      font-size: 20px;
       a {
         margin-left: 40px;
       }

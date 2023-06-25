@@ -9,7 +9,7 @@ const Demo = () => {
 
   return (
       <StyledDemo>
-        <div className="flex items-center justify-center">
+        <div className="">
               <Form registered={registered} setRegistered={setRegistered} />
         </div>
       </StyledDemo>
